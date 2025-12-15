@@ -16,3 +16,4 @@ endif()
 
 # Add the subdirectory for source
 add_subdirectory(source/address)
+add_subdirectory(source/thread)
