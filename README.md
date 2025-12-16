@@ -1,7 +1,20 @@
-# C-_Sanitizer_Study
-Repositoty to test compiler options "fsanitize=(memory or thread)". The book [Asynchronous Programming with C++](https://www.packtpub.com/en-in/product/asynchronous-programming-with-c-9781835884256), was used as reference to create it.
+# C++ Sanitizer and Valgrind Study
 
-The aim is to use compiler options (-fsanitize) and compare with different tools.
+Repositoty to test compiler options "fsanitize=(memory or thread)". The book [Asynchronous Programming with C++](https://www.packtpub.com/en-in/product/asynchronous-programming-with-c-9781835884256), was used as reference to create it. Preseting collection of small C++ programs with common bugs, designed to demonstrate and compare the capabilities of GCC Sanitizers and Valgrind.
+
+The goal is to show:
+-   How to compile code with Sanitizers.
+-   What the error reports look like.
+-   How the same bugs are detected by different tools.
+
+## Tools Compared
+
+1.  **Compiler Sanitizers (`-fsanitize=...`)**: A family of powerful bug detectors built into GCC and Clang. They work by instrumenting the code at compile time.
+    *   **AddressSanitizer (ASan)**: Detects memory errors like use-after-free, buffer overflows, and use-after-return.
+    *   **ThreadSanitizer (TSan)**: Detects data races in multi-threaded code.
+2.  **Valgrind**: A dynamic analysis tool.
+    *   **Memcheck**: The default tool, detects memory errors. 
+    *   **Helgrind/DRD**: Tools for detecting threading errors.
 
 
 ## How to compile
